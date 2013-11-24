@@ -6,10 +6,11 @@ public class Kamera {
  
     }
  
-    public Kamera(int id, String name, String type, int cena) {
+    public Kamera(int id, String name, String type, int sklep, int cena) {
         this.id = id;
         this.name = name;
         this.type = type;
+        this.sklep = sklep;
         this.cena = cena;
     }
  
@@ -27,6 +28,14 @@ public class Kamera {
  
     public String getType() {
         return this.type;
+    }
+    
+    public void setSklep(int sklep) {
+        this.sklep = sklep;
+    }
+ 
+    public int getSklep() {
+        return this.sklep;
     }
  
     public void setCena(int cena) {
@@ -48,6 +57,7 @@ public class Kamera {
     private String name;
     private String type;
     private int cena;
+    private int sklep;
     private int id;
  
 }
